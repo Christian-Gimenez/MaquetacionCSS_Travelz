@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./styles/styles.css" />
+  <title>TRAVELZ</title>
+</head>
+
+<body>
+  <header>
+    <nav>Menu</nav>
+    <h1>
+      <figure>
+        <img src="./imgs/logotipo.png" alt="Logo TRAVELZ" />
+      </figure>
+      TRAVELZ
+    </h1>
+    <div></div>
+  </header>
+
+  <section>
+    <p>Filtrar</p>
+    <p>Reservar | Cosas por hacer</p>
+    <form action="">
+      <div class="elemForm">
+        <img src="./imgs/gps.png" alt="Logo ubicación" />
+        <label for="localizacion">Localización</label>
+        <input type="text" id="localizacion" placeholder="¿A donde quieres ir?" />
+      </div>
+
+      <div class="elemForm">
+        <img src="./imgs/calendario.png" alt="Logo calendario in" />
+        <label for="calendarioIn">Check in</label>
+        <input type="text" id="calendarioIn" placeholder="Agregar fecha" />
+      </div>
+
+      <div class="elemForm">
+        <img src="./imgs/calendario.png" alt="Logo calendario out" />
+        <label for="calendarioOut">Check out</label>
+        <input type="text" id="calendarioOut" placeholder="Agregar fecha" />
+      </div>
+
+      <div class="elemForm">
+        <img src="./imgs/Person.png" alt="Logo persona" />
+        <label for="viajeros">Viajeros</label>
+        <input type="number" id="viajeros" placeholder="¿Cuántos viajeros sois" />
+      </div>
+
+      <div>
+        <input type="radio" value="SoloIda">
+        <label for="SoloIda">Solo ida</label>
+
+        <input type="radio" value="VueloHotel">
+        <label for="VueloHotel">Vuelo + Hotel</label>
+
+        <input type="radio" value="ViajeMascota">
+        <label for="ViajeMascota">Viajo con mascota</label>
+      </div>
+      <input type="submit" value="Buscar" />
+    </form>
+  </section>
+
+  <section>
+    <article class="cardViaje">
+      <img src="./imgs/madrid.png" alt="Foto Madrid">
+      <h2>MADRID</h2>
+      <p>
+        Directo desde 9 € por<br>
+        pasajero. Incluido IVA
+      </p>
+      <hr>
+      <p>
+        Vuelo directo solo de ida con<br>
+        Ryanair.
+      </p>
+      <button>350,50€</button>
+    </article>
+    <article class="cardViaje">
+      <img src="./imgs/Barcelona.png" alt="Foto Barcelona">
+      <h2>BARCELONA</h2>
+      <p>
+        Directo desde 10 € por<br>
+        pasajero. Incluido IVA
+      </p>
+      <hr>
+      <p>
+        Vuelo de Ibiza a Madrid<br>
+        con Vueling Airlines
+      </p>
+      <button>350,50€</button>
+    </article>
+    <article class="cardViaje">
+      <img src="./imgs/ny.png" alt="Foto Nueva York">
+      <h2>NUEVA YORK</h2>
+      <p>
+        Directo desde 9 € por<br>
+        pasajero. Incluido IVA
+      </p>
+      <hr>
+      <p>
+        Vuelo directo ida y vuelta
+        con Air Transat
+      </p>
+      <button>350,50€</button>
+    </article>
+    <article class="cardViaje">
+      <img src="./imgs/tokyo.png" alt="Foto Tokyo">
+      <h2>TOKYO</h2>
+      <p>
+        Directo desde 12€ por<br>
+        pasajero. Incluido IVA
+      </p>
+      <hr>
+      <p>
+        Vuelta de ida y vuelta con<br>
+        Iberojet y WORLD2FLY
+      </p>
+      <button>350,50€</button>
+    </article>
+    <button value="Ver más..."></button>
+  </section>
+
+  <footer>
+    <div>
+      <h3>Nuestra empresa</h3>
+      <p><a href="#">Quienes somos</a></p>
+      <p><a href="#">Empleo</a></p>
+      <p><a href="#">Móvil</a></p>
+      <p><a href="#">Blog</a></p>
+
+      <h3>Contacto</h3>
+      <p><a href="#">Ayuda/Pregunta</a></p>
+      <p><a href="#">Prensa</a></p>
+      <p><a href="#">Afiliados</a></p>
+      <p><a href="#">Propietarios</a></p>
+      <p><a href="#">Socios</a></p>
+    </div>
+
+    <div>
+      <img src="" alt="">
+      <img src="" alt="">
+      <img src="" alt="">
+      <img src="" alt="">
+      <img src="" alt="">
+    </div>
+  </footer>
+
+</body>
+
+</html>

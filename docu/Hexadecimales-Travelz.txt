@@ -1,0 +1,6 @@
+0E3157 color footer header
+904214 precios
+8D9BAC fondo
+C1846A menus
+D8B5AB ventanas de viajes
+D9D9D9 letras logo etc
