@@ -1,0 +1,148 @@
+
+h1, h2, h3, h4, div, p, header, ul,
+body, section, article, footer, figure,button{
+  margin: 0; padding: 0;
+}
+
+body {
+    font-family: 'Readex Pro', sans-serif;
+    background-color: #8D9BAC;
+    font-weight: bold;
+}
+
+.contenedor {
+    margin: 0 auto;
+    width: 95%;
+}
+
+.cabecera {
+    background-color: #0E3157;
+    font-family:  'Jomhuria' ,sans-serif;
+    color: white;
+    height: 40px;
+    text-align: center;
+    padding: 16px 10px 5px 10px;
+}
+
+ button{
+    border-style: none;
+    background: none;
+}
+
+.cabecera button:first-child img{
+    width: 45px;
+    height: 28px;
+
+}
+
+.cabecera div{
+    display: inline-block;    
+    width: 150px;
+}
+
+.cabecera div img{
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+    margin-top: 3px;
+    float: left;
+}
+
+.cabecera div p {
+    text-align: center;
+    font-size: x-large;
+    line-height: 35px;
+    width: 150px;
+}
+
+.cabecera button:first-child{
+    float: left;
+}
+
+.cabecera button:last-child{
+    float: right;
+}
+
+.buscador{
+    background-color: #C1846A;
+    border-radius: 25px;
+    margin-top: 20px;
+    color: #0E3157;
+    padding: 15px 5px;
+}
+.buscador a{
+    color: #0E3157;
+    text-decoration: none;
+}
+.filtros img{
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+}
+
+.filtros {
+    color: #0E3157;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+.filtros button{
+    float: left;
+}
+.filtros span{
+    font-size: 16px;
+    color: #0E3157;
+    font-weight: bold;
+    margin-left: 10px;
+}
+.filtros div{
+float: right;
+}
+
+.formulario div{
+    text-size-adjust:12px;
+    padding: 10px;
+    margin-left: 15px;
+    
+}
+.formulario p{
+    margin-top: 10px;
+}
+.formulario img{
+    float:left;
+    width: 40px;
+    height: 50px;
+    margin-right: 10px;
+}
+hr{
+    width: 90%;
+    border-color:#0E3157;
+}
+.formulario input[type="text"]{
+    border: none;
+    background-color: transparent;
+}
+.formulario label{
+    font-size: 13px;
+}
+.formulario button{
+    background-color:#0E3157;
+    color: white;
+    border-radius: 25px;
+    width: 250px;
+    height: 40px;
+    font-size: x-large;    
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.formulario button img{
+    width: 25px;
+    height: 25px;
+    margin-left: 50px;  
+    margin-right: -50px;  
+}
+
+.opcionales {
+    margin-top: 10px;
+}
