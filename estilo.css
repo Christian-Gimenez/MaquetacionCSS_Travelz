@@ -1,46 +1,97 @@
-
-h1, h2, h3, h4, div, p, header, ul,
-body, section, article, footer, figure,button{
-  margin: 0; padding: 0;
+/*Importar las fuentes desde la carpeta local /fonts*/
+@font-face {
+    font-family: 'Readex Pro';
+    src: url("/fonts/ReadexPro-Bold.ttf"),
+        url("/fonts/ReadexPro-ExtraLight.ttf"),
+        url("/fonts/ReadexPro-Light.ttf"),
+        url("/fonts/ReadexPro-Medium.ttf"),
+        url("/fonts/ReadexPro-Regular.ttf"),
+        url("fonts/ReadexPro-SemiBold.ttf");
 }
 
+@font-face {
+    font-family: 'Jomhuria';
+    src: url("fonts/Jomhuria-Regular.ttf");
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url("fonts/Roboto-Black.ttf"),
+        url("fonts/Roboto-BlackItalic.ttf"),
+        url("fonts/Roboto-Bold.ttf"),
+        url("fonts/Roboto-Italic.ttf"),
+        url("fonts/Roboto-Light.ttf"),
+        url("fonts/Roboto-LightItalic.ttf"),
+        url("fonts/Roboto-Medium.ttf"),
+        url("fonts/Roboto-MediumItalic.ttf"),
+        url("fonts/Roboto-Regular.ttf"),
+        url("fonts/Roboto-Thin.ttf"),
+        url("fonts/Roboto-ThinItalic.ttf");
+}
+
+/*Resetear los elementos por defecto*/
+h1,
+h2,
+h3,
+h4,
+div,
+p,
+header,
+ul,
+body,
+section,
+article,
+footer,
+figure,
+button {
+    margin: 0;
+    padding: 0;
+}
+
+/*Estilos básicos de la página*/
 body {
     font-family: 'Readex Pro', sans-serif;
     background-color: #8D9BAC;
     font-weight: bold;
 }
 
+/*Centrado y ancho de contenedores de elementos*/
 .contenedor {
     margin: 0 auto;
     width: 95%;
 }
 
+/*Cabecera menú de arriba*/
 .cabecera {
     background-color: #0E3157;
-    font-family:  'Jomhuria' ,sans-serif;
+    font-family: 'Jomhuria', sans-serif;
     color: white;
     height: 40px;
     text-align: center;
     padding: 16px 10px 5px 10px;
 }
 
- button{
+/*Quitarle a los botones los estilos por defecto*/
+button {
     border-style: none;
     background: none;
 }
 
-.cabecera button:first-child img{
+/*Hamburguesa botón menú desplegable*/
+.cabecera button:first-child img {
     width: 45px;
     height: 28px;
 
 }
 
-.cabecera div{
-    display: inline-block;    
+/*Poner en linea los elementos de la cabecera*/
+.cabecera div {
+    display: inline-block;
     width: 150px;
 }
 
-.cabecera div img{
+/*Logo Travelz*/
+.cabecera div img {
     width: 30px;
     height: 30px;
     vertical-align: middle;
@@ -48,6 +99,7 @@ body {
     float: left;
 }
 
+/*Texto: TRAVELZ*/
 .cabecera div p {
     text-align: center;
     font-size: x-large;
@@ -55,26 +107,32 @@ body {
     width: 150px;
 }
 
-.cabecera button:first-child{
+/*Flotar imágenes cabecera*/
+.cabecera button:first-child {
     float: left;
 }
 
-.cabecera button:last-child{
+.cabecera button:last-child {
     float: right;
 }
 
-.buscador{
+/*Buscador*/
+.buscador {
     background-color: #C1846A;
     border-radius: 25px;
     margin-top: 20px;
     color: #0E3157;
     padding: 15px 5px;
 }
-.buscador a{
+
+
+.buscador a {
     color: #0E3157;
     text-decoration: none;
 }
-.filtros img{
+
+/*Botón de filtrar*/
+.filtros img {
     width: 20px;
     height: 20px;
     vertical-align: middle;
@@ -85,64 +143,77 @@ body {
     font-size: 14px;
     margin-bottom: 30px;
 }
-.filtros button{
+
+.filtros button {
     float: left;
 }
-.filtros span{
+
+.filtros span {
     font-size: 16px;
     color: #0E3157;
     font-weight: bold;
     margin-left: 10px;
 }
-.filtros div{
-float: right;
+
+.filtros div {
+    float: right;
 }
 
-.formulario div{
-    text-size-adjust:12px;
+/*Formulario naranja de vuelos*/
+.formulario div {
+    text-size-adjust: 12px;
     padding: 10px;
     margin-left: 15px;
-    
+
 }
-.formulario p{
+
+.formulario p {
     margin-top: 10px;
 }
-.formulario img{
-    float:left;
+
+.formulario img {
+    float: left;
     width: 40px;
     height: 50px;
     margin-right: 10px;
 }
-hr{
+
+/*Lineas separadores formulario vuelos*/
+hr {
     width: 90%;
-    border-color:#0E3157;
+    border-color: #0E3157;
 }
-.formulario input[type="text"]{
+
+/*Estilos formularios*/
+.formulario input[type="text"] {
     border: none;
     background-color: transparent;
 }
-.formulario label{
+
+.formulario label {
     font-size: 13px;
 }
-.formulario button{
-    background-color:#0E3157;
+
+.formulario button {
+    background-color: #0E3157;
     color: white;
     border-radius: 25px;
     width: 250px;
     height: 40px;
-    font-size: x-large;    
+    font-size: x-large;
     font-weight: bold;
     display: inline-block;
     margin-top: 20px;
 }
 
-.formulario button img{
+.formulario button img {
     width: 25px;
     height: 25px;
-    margin-left: 50px;  
-    margin-right: -50px;  
+    margin-left: 50px;
+    margin-right: -50px;
 }
 
+/*Estilo input tipo radio de opciones*/
 .opcionales {
     margin-top: 10px;
 }
