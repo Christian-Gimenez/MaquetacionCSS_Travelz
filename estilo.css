@@ -35,6 +35,7 @@ h2,
 h3,
 h4,
 div,
+hr,
 p,
 header,
 ul,
@@ -216,4 +217,61 @@ hr {
 /*Estilo input tipo radio de opciones*/
 .opcionales {
     margin-top: 10px;
+}
+
+/*Cartas de viajes*/
+.cards {
+    margin-top: 30px;
+}
+.cardViaje{
+    background-color: #d8b5ab;
+    border-radius: 25px;
+    padding: 1% 1.5%;
+    overflow: auto;
+    margin-bottom: 30px;
+}
+.cardViaje img {
+    float:left;
+    width: 113px;
+    height: 98px;
+    margin-top: 5px;
+    margin-right: 15px;
+}
+.cardViaje button{
+    float: right;
+    width: auto;
+    height: auto;
+    padding: 0 2px;
+    line-height: 250%;
+    border-radius: 15px;
+    background-color: #904214;
+    color: #d8b5ab;
+    font-family: 'Readex Pro';
+    font-size: 16px;
+    margin-top: 30px;
+    margin-left: 15px;
+
+}
+.cardViaje div {
+    color: #0E3157;  
+    margin-top:6px;
+}
+.cardViaje div h2{
+    font-family: 'Jomhuria';
+    font-size: 30px;
+    font-weight: 400;
+} 
+.cardViaje div p{
+    font-family: 'Readex Pro';
+    font-size: 11px;
+    font-weight: 400;
+}
+.cardViaje div hr{
+    width: auto;
+    margin-top: 4px;
+    margin-bottom:6px ;
+}
+.separadorFloat{
+    clear: both;
+    content: none;
 }
