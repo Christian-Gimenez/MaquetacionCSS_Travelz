@@ -40,6 +40,7 @@ p,
 header,
 ul,
 body,
+html,
 section,
 article,
 footer,
@@ -223,21 +224,24 @@ hr {
 .cards {
     margin-top: 30px;
 }
-.cardViaje{
+
+.cardViaje {
     background-color: #d8b5ab;
     border-radius: 25px;
     padding: 1% 1.5%;
     overflow: auto;
     margin-bottom: 30px;
 }
+
 .cardViaje img {
-    float:left;
+    float: left;
     width: 113px;
     height: 98px;
     margin-top: 5px;
     margin-right: 15px;
 }
-.cardViaje button{
+
+.cardViaje button {
     float: right;
     width: auto;
     height: auto;
@@ -252,26 +256,64 @@ hr {
     margin-left: 15px;
 
 }
+
 .cardViaje div {
-    color: #0E3157;  
-    margin-top:6px;
+    color: #0E3157;
+    margin-top: 6px;
 }
-.cardViaje div h2{
+
+.cardViaje div h2 {
     font-family: 'Jomhuria';
     font-size: 30px;
     font-weight: 400;
-} 
-.cardViaje div p{
+}
+
+.cardViaje div p {
     font-family: 'Readex Pro';
     font-size: 11px;
     font-weight: 400;
 }
-.cardViaje div hr{
+
+.cardViaje div hr {
     width: auto;
     margin-top: 4px;
-    margin-bottom:6px ;
+    margin-bottom: 6px;
 }
-.separadorFloat{
+
+.separadorFloat {
     clear: both;
     content: none;
+}
+
+/* Footer*/
+.pie {
+    padding: 20px;
+    background-color: #0E3157;
+    color: white;
+    font-size: 28px;
+}
+
+.pie a {
+    margin: 10px;
+    text-decoration: none;
+    font-size: 19px;
+    color: white;
+
+}
+
+.contacto a {
+    display: block;
+    text-decoration: none;
+    color: white;
+}
+
+.pie ul {
+    float: right;
+    list-style: none;
+    margin-top: 30px;
+}
+
+.pie ul li img {
+    width: 40px;
+    padding: 7px;
 }
