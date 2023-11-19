@@ -112,13 +112,17 @@ button {
 body {
     font-family: 'Readex Pro', sans-serif;
     background-color: #8D9BAC;
-    
+
 }
 
 /*Centrado y ancho de contenedores de elementos*/
 .contenedor {
     margin: 0 auto;
     width: 95%;
+}
+
+.clearfix {
+    clear: both;
 }
 
 /*Cabecera menú de arriba*/
@@ -183,13 +187,9 @@ button {
     } */
 }
 
-@media screen and (min-width: 1366px) {
+@media screen and (min-width: 1366px) {}
 
-}
-
-@media screen and (min-width: 1920px) {
-
-}
+@media screen and (min-width: 1920px) {}
 
 /*Buscador*/
 .buscador {
@@ -198,7 +198,7 @@ button {
     margin-top: 20px;
     color: #0E3157;
     font-weight: bold;
-    padding: 15px 5px;
+    padding: 15px 0px;
 }
 
 
@@ -226,7 +226,7 @@ button {
 }
 
 .filtros span {
-    font-size: 16px;
+    font-size: 14px;
     color: #0E3157;
     font-weight: bold;
     margin-left: 10px;
@@ -234,17 +234,27 @@ button {
 
 .filtros div {
     float: right;
+    line-height: 16px;
+}
+
+.separadorForm {
+    display: none;
 }
 
 /*Formulario naranja de vuelos*/
 .formulario div {
     font-size: 16px;
     padding: 10px;
-    margin-left: 14px;
-
 }
 
-.formulario p {
+.formulario .localizacion,
+.formulario .checkin,
+.formulario .checkout,
+.formulario .viajeros {
+    margin-left: 14px;
+}
+
+.formulario label {
     margin-top: 10px;
 }
 
@@ -253,11 +263,13 @@ button {
     width: 40px;
     height: 50px;
     margin-right: 10px;
+    margin-bottom: 5px;
 }
 
-/* 
+
 .formulario img[alt="ubicacion"] {
     width: 38px;
+    margin-right: 21.5px;
 }
 
 .formulario img[alt="calendario"] {
@@ -266,7 +278,8 @@ button {
 
 .formulario img[alt="monigote"] {
     width: 44px;
-} */
+    margin-right: 15px;
+}
 
 /*Lineas separadores formulario vuelos*/
 hr {
@@ -301,7 +314,6 @@ hr {
     font-size: 26px;
     font-weight: bold;
     display: inline-block;
-    margin-left: 29px;
 }
 
 .formulario button img {
@@ -312,25 +324,67 @@ hr {
     margin-top: 2px;
 }
 
+.btnBuscar {
+    text-align: center;
+}
+
 /*Estilo input tipo radio de opciones*/
 .opcionales {
     margin-top: 12px;
+    text-align: center;
+}
+
+.opcionales label {
+    margin-left: 1%;
 }
 
 /*CHRISTIAN*/
 @media screen and (min-width: 1024px) {
-    /* .buscador {
-        background-color: aqua;
-    } */
+
+    /*Cabecera de filtros*/
+    .filtros div {
+        float: left;
+        width: 50%;
+    }
+
+    .filtros div span {
+        margin-right: 5%;
+        margin-left: 5%;
+    }
+
+    .filtros button {
+        float: right;
+    }
+
+    /*Formularios*/
+    .separadorForm {
+        display: block;
+    }
+
+    .formulario div {
+        float: left;
+    }
+
+    .formulario hr {
+        float: left;
+        display: inline-block;
+        margin-left: -40px;
+        margin-top: 45px;
+        width: 91.88px;
+        transform: rotate(90deg);
+    }
+
+    .formulario .localizacion,
+    .formulario .checkin,
+    .formulario .checkout,
+    .formulario .viajeros {
+        margin-left: 0px;
+    }
 }
 
-@media screen and (min-width: 1366px) {
+@media screen and (min-width: 1366px) {}
 
-}
-
-@media screen and (min-width: 1920px) {
-
-}
+@media screen and (min-width: 1920px) {}
 
 /*Cartas de viajes*/
 .cards {
@@ -353,11 +407,12 @@ hr {
 
 /*Descuento Madrid y Barcelona*/
 .descuento {
-    border-left:   34.5px solid #904214;
-    border-right:  34.5px solid transparent;
-    border-top:    34.5px solid #904214;
+    border-left: 34.5px solid #904214;
+    border-right: 34.5px solid transparent;
+    border-top: 34.5px solid #904214;
     border-bottom: 34.5px solid transparent;
 }
+
 .desc {
     transform: rotate(-45deg);
     text-shadow: 1px 1px 3px rgb(61, 61, 61);
@@ -382,7 +437,7 @@ hr {
     position: absolute;
     top: 560px;
     left: 9px;
-    
+
 }
 
 .desc50bcn {
@@ -414,7 +469,7 @@ hr {
     font-size: 16px;
     margin-top: 30px;
     font-family: "Readex Pro";
-    
+
 }
 
 .cardViaje div {
@@ -450,7 +505,7 @@ hr {
     font-size: 21px;
     font-weight: 600;
     background-color: #D8B5AB;
-    color:#0E3157;
+    color: #0E3157;
     width: 129px;
     height: 42px;
     border-radius: 20px;
@@ -465,13 +520,9 @@ hr {
     } */
 }
 
-@media screen and (min-width: 1366px) {
+@media screen and (min-width: 1366px) {}
 
-}
-
-@media screen and (min-width: 1920px) {
-
-}
+@media screen and (min-width: 1920px) {}
 
 /* Footer*/
 .pie {
@@ -523,10 +574,6 @@ hr {
     } */
 }
 
-@media screen and (min-width: 1366px) {
+@media screen and (min-width: 1366px) {}
 
-}
-
-@media screen and (min-width: 1920px) {
-
-}
+@media screen and (min-width: 1920px) {}

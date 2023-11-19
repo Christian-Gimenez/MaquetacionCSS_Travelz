@@ -24,6 +24,7 @@
         <button class="btn-buscador"><img src="imagenes\lupa.png" alt="lupa"></button>
     </header>
 
+    <div class="clearfix"></div>
 
     <!--Formulario para buscar vuelos -->
     <section class="contenedor buscador">
@@ -31,49 +32,51 @@
             <button><img src="imagenes/filtrar.png" alt="filtrar"><span>Filtrar</span></button>
             <div>
                 <a href="#">Reservar</a>
-                &nbsp;|&nbsp;
+                <span>|</span>
                 <a href="#">Cosas por hacer</a>
             </div>
         </div>
+        <hr class="separadorForm"/>
         <form action="" class="formulario">
             <div class="localizacion">
                 <img src="imagenes/ubicacion.png" alt="ubicacion">
-                <p> Localizacion<br />
+                <label> Localizacion<br />
                     <input type="text" placeholder="¿A donde quieres ir?">
-                </p>
+                </label>
             </div>
             <hr>
             <div class="checkin">
                 <img src="imagenes/calendario.png" alt="calendario">
-                <p> Check in<br />
+                <label> Check in<br />
                     <input type="text" placeholder="Agregar fecha">
-                </p>
+                </label>
             </div>
             <hr>
             <div class="checkout">
                 <img src="imagenes/calendario.png" alt="calendario">
-                <p> Check out<br />
+                <label> Check out<br />
                     <input type="text" placeholder="Agregar fecha">
-                </p>
+                </label>
             </div>
             <hr>
             <div class="viajeros">
                 <img src="imagenes/Personmonigote.png" alt="monigote">
-                <p> Viajeros<br />
+                <label> Viajeros<br />
                     <input type="text" placeholder="¿Cuantos viajeros sois?">
-                </p>
+                </label>
             </div>
             <div class="opcionales">
                 <label for=""><input type="radio" name="radio" id="">Solo ida</label>
                 <label for=""><input type="radio" name="radio" id="">Vuelo + Hotel</label>
                 <label for=""><input type="radio" name="radio" id="">Viajo con mascota</label>
             </div>
-            <div><!--Dejar por ahora, Quitar al final-->
+            <div class="btnBuscar">
                 <button><img src="imagenes/lupita.png" alt="lupa">Buscar</button>
             </div>
         </form>
     </section>
 
+    <div class="clearfix"></div>
 
     <!--Cartas de viajes en oferta-->
     <section class="contenedor cards">
@@ -148,7 +151,7 @@
         </article>
         <button class="btnVerMas">Ver más...</button>
     </section>
-
+    <div class="clearfix"></div>
     <!--Footer para conocer la empresa-->
 
     <footer class="pie">
