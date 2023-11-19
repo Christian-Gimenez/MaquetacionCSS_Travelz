@@ -122,6 +122,8 @@ body {
 }
 
 .clearfix {
+    display: inline;
+    visibility: hidden;
     clear: both;
 }
 
@@ -342,6 +344,9 @@ hr {
 @media screen and (min-width: 1024px) {
 
     /*Cabecera de filtros*/
+    .buscador {
+        height: 188px;
+    }
     .filtros div {
         float: left;
         width: 50%;
@@ -359,6 +364,8 @@ hr {
     /*Formularios*/
     .separadorForm {
         display: block;
+        width: 100%;
+        margin-left: 0px;
     }
 
     .formulario div {
@@ -370,6 +377,7 @@ hr {
         display: inline-block;
         margin-left: -40px;
         margin-top: 45px;
+        margin-right: -35px;
         width: 91.88px;
         transform: rotate(90deg);
     }
@@ -378,7 +386,8 @@ hr {
     .formulario .checkin,
     .formulario .checkout,
     .formulario .viajeros {
-        margin-left: 0px;
+       padding-left: 10px;
+       margin-left: 0px;
     }
 }
 
