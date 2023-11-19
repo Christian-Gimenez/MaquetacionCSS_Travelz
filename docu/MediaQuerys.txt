@@ -1,0 +1,12 @@
+-Cortes movil:
+	//min-width: 390px (iPhone 12 Pro)
+	//min-width: 430px (iPhone 14 Pro Max)
+
+-Corte tablet-pie:
+	min-width: 1024px (iPad Pro)
+
+-Corte tablet-tumbada:
+	min-width: 1366px (iPad Pro)
+
+-Cortes escritorio:
+	min-width: 1920px (Desktop)

@@ -1,32 +1,88 @@
-/*Importar las fuentes desde la carpeta local /fonts*/
+/* Importar las fuentes desde la carpeta local /fonts */
+
+/*Readex Pro*/
 @font-face {
     font-family: 'Readex Pro';
-    src: url("/fonts/ReadexPro-Bold.ttf"),
-        url("/fonts/ReadexPro-ExtraLight.ttf"),
-        url("/fonts/ReadexPro-Light.ttf"),
-        url("/fonts/ReadexPro-Medium.ttf"),
-        url("/fonts/ReadexPro-Regular.ttf"),
-        url("fonts/ReadexPro-SemiBold.ttf");
+    src: url("/fonts/ReadexPro-Bold.ttf");
+    font-weight: bold;
 }
 
+@font-face {
+    font-family: 'Readex Pro';
+    src: url("/fonts/ReadexPro-Light.ttf");
+    font-weight: lighter;
+}
+
+@font-face {
+    font-family: 'Readex Pro';
+    src: url("/fonts/ReadexPro-Medium.ttf");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Readex Pro';
+    src: url("/fonts/ReadexPro-Regular.ttf");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Readex Pro';
+    src: url("/fonts/ReadexPro-SemiBold.ttf");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Readex Pro-ExtraLight';
+    src: url("/fonts/ReadexPro-ExtraLight.ttf");
+}
+
+/*Jomhuria*/
 @font-face {
     font-family: 'Jomhuria';
     src: url("fonts/Jomhuria-Regular.ttf");
 }
 
+/*Roboto*/
 @font-face {
     font-family: 'Roboto';
-    src: url("fonts/Roboto-Black.ttf"),
-        url("fonts/Roboto-BlackItalic.ttf"),
-        url("fonts/Roboto-Bold.ttf"),
-        url("fonts/Roboto-Italic.ttf"),
-        url("fonts/Roboto-Light.ttf"),
-        url("fonts/Roboto-LightItalic.ttf"),
-        url("fonts/Roboto-Medium.ttf"),
-        url("fonts/Roboto-MediumItalic.ttf"),
-        url("fonts/Roboto-Regular.ttf"),
-        url("fonts/Roboto-Thin.ttf"),
-        url("fonts/Roboto-ThinItalic.ttf");
+    src: url("/fonts/Roboto-Black.ttf");
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url("/fonts/Roboto-BlackItalic.ttf");
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url("/fonts/Roboto-Bold.ttf");
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url("/fonts/Roboto-Italic.ttf");
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url("/fonts/Roboto-Light.ttf");
+    font-weight: lighter;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url("/fonts/Roboto-LightItalic.ttf");
+    font-weight: lighter;
+    font-style: italic;
 }
 
 /*Resetear los elementos por defecto*/
@@ -38,6 +94,8 @@ div,
 hr,
 p,
 header,
+label,
+input,
 ul,
 body,
 html,
@@ -54,7 +112,7 @@ button {
 body {
     font-family: 'Readex Pro', sans-serif;
     background-color: #8D9BAC;
-    font-weight: bold;
+    
 }
 
 /*Centrado y ancho de contenedores de elementos*/
@@ -83,7 +141,6 @@ button {
 .cabecera button:first-child img {
     width: 45px;
     height: 28px;
-
 }
 
 /*Poner en linea los elementos de la cabecera*/
@@ -99,14 +156,15 @@ button {
     vertical-align: middle;
     margin-top: 3px;
     float: left;
+    margin-left: -9px;
 }
 
 /*Texto: TRAVELZ*/
-.cabecera div p {
+.cabecera div h1 {
     text-align: center;
-    font-size: x-large;
-    line-height: 35px;
-    width: 150px;
+    font-weight: 100;
+    font-size: 64px;
+    line-height: 45px;
 }
 
 /*Flotar imágenes cabecera*/
@@ -118,18 +176,35 @@ button {
     float: right;
 }
 
+/*AHMED*/
+@media screen and (min-width: 1024px) {
+    /* .cabecera {
+        background-color: aqua;
+    } */
+}
+
+@media screen and (min-width: 1366px) {
+
+}
+
+@media screen and (min-width: 1920px) {
+
+}
+
 /*Buscador*/
 .buscador {
     background-color: #C1846A;
     border-radius: 25px;
     margin-top: 20px;
     color: #0E3157;
+    font-weight: bold;
     padding: 15px 5px;
 }
 
 
 .buscador a {
     color: #0E3157;
+    font-weight: bold;
     text-decoration: none;
 }
 
@@ -163,9 +238,9 @@ button {
 
 /*Formulario naranja de vuelos*/
 .formulario div {
-    text-size-adjust: 12px;
+    font-size: 16px;
     padding: 10px;
-    margin-left: 15px;
+    margin-left: 14px;
 
 }
 
@@ -180,10 +255,24 @@ button {
     margin-right: 10px;
 }
 
+/* 
+.formulario img[alt="ubicacion"] {
+    width: 38px;
+}
+
+.formulario img[alt="calendario"] {
+    width: 49px;
+}
+
+.formulario img[alt="monigote"] {
+    width: 44px;
+} */
+
 /*Lineas separadores formulario vuelos*/
 hr {
     width: 90%;
     border-color: #0E3157;
+    margin-left: 17px;
 }
 
 /*Estilos formularios*/
@@ -192,32 +281,55 @@ hr {
     background-color: transparent;
 }
 
+.formulario input::placeholder {
+    font-size: 16px;
+    font-family: Roboto;
+    font-weight: bold;
+    color: #0e31575b;
+}
+
 .formulario label {
-    font-size: 13px;
+    font-size: 14px;
 }
 
 .formulario button {
     background-color: #0E3157;
     color: white;
     border-radius: 25px;
-    width: 250px;
-    height: 40px;
-    font-size: x-large;
+    width: 265px;
+    height: 32.06px;
+    font-size: 26px;
     font-weight: bold;
     display: inline-block;
-    margin-top: 20px;
+    margin-left: 29px;
 }
 
 .formulario button img {
     width: 25px;
     height: 25px;
-    margin-left: 50px;
+    margin-left: 42px;
     margin-right: -50px;
+    margin-top: 2px;
 }
 
 /*Estilo input tipo radio de opciones*/
 .opcionales {
-    margin-top: 10px;
+    margin-top: 12px;
+}
+
+/*CHRISTIAN*/
+@media screen and (min-width: 1024px) {
+    /* .buscador {
+        background-color: aqua;
+    } */
+}
+
+@media screen and (min-width: 1366px) {
+
+}
+
+@media screen and (min-width: 1920px) {
+
 }
 
 /*Cartas de viajes*/
@@ -228,33 +340,81 @@ hr {
 .cardViaje {
     background-color: #d8b5ab;
     border-radius: 25px;
-    padding: 1% 1.5%;
+    padding-left: 1.5%;
+    padding-right: 1.5%;
     overflow: auto;
     margin-bottom: 30px;
+    padding-bottom: 5px;
 }
+
+.cardViaje:nth-of-type(2) {
+    box-shadow: 2px 4px 5px #DE683C;
+}
+
+/*Descuento Madrid y Barcelona*/
+.descuento {
+    border-left:   34.5px solid #904214;
+    border-right:  34.5px solid transparent;
+    border-top:    34.5px solid #904214;
+    border-bottom: 34.5px solid transparent;
+}
+.desc {
+    transform: rotate(-45deg);
+    text-shadow: 1px 1px 3px rgb(61, 61, 61);
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+.desc20 {
+    position: absolute;
+    top: 571px;
+    left: 3px;
+}
+
+.desc50 {
+    position: absolute;
+    top: 701px;
+    left: 3px;
+}
+
+.desc20mad {
+    position: absolute;
+    top: 560px;
+    left: 9px;
+    
+}
+
+.desc50bcn {
+    position: absolute;
+    top: 682px;
+    left: 9px;
+}
+
 
 .cardViaje img {
     float: left;
+    border-radius: 25px;
     width: 113px;
-    height: 98px;
     margin-top: 5px;
-    margin-right: 15px;
+    height: 90px;
+    margin-right: 10px;
 }
 
 .cardViaje button {
     float: right;
     width: auto;
     height: auto;
-    padding: 0 2px;
+    padding-left: 1px;
+    padding-right: 1px;
     line-height: 250%;
     border-radius: 15px;
     background-color: #904214;
     color: #d8b5ab;
-    font-family: 'Readex Pro';
     font-size: 16px;
     margin-top: 30px;
-    margin-left: 15px;
-
+    font-family: "Readex Pro";
+    
 }
 
 .cardViaje div {
@@ -263,21 +423,21 @@ hr {
 }
 
 .cardViaje div h2 {
+    margin-top: 20px;
     font-family: 'Jomhuria';
-    font-size: 30px;
+    font-size: 50px;
     font-weight: 400;
+    line-height: 12px;
 }
 
 .cardViaje div p {
     font-family: 'Readex Pro';
     font-size: 11px;
-    font-weight: 400;
 }
 
 .cardViaje div hr {
-    width: auto;
+    width: 45%;
     margin-top: 4px;
-    margin-bottom: 6px;
 }
 
 .separadorFloat {
@@ -285,12 +445,50 @@ hr {
     content: none;
 }
 
+.btnVerMas {
+    font-family: "Readex Pro";
+    font-size: 21px;
+    font-weight: 600;
+    background-color: #D8B5AB;
+    color:#0E3157;
+    width: 129px;
+    height: 42px;
+    border-radius: 20px;
+    margin-left: 33%;
+    margin-bottom: 30px;
+}
+
+/*DIEGO*/
+@media screen and (min-width: 1024px) {
+    /* .cardViaje {
+        background-color: aqua;
+    } */
+}
+
+@media screen and (min-width: 1366px) {
+
+}
+
+@media screen and (min-width: 1920px) {
+
+}
+
 /* Footer*/
 .pie {
     padding: 20px;
     background-color: #0E3157;
     color: white;
+    font-family: "Readex Pro-ExtraLight";
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.pie h3 {
     font-size: 28px;
+}
+
+.pie h3:last-of-type {
+    margin-top: 30px;
 }
 
 .pie a {
@@ -310,10 +508,25 @@ hr {
 .pie ul {
     float: right;
     list-style: none;
-    margin-top: 30px;
+    margin-top: 60px;
 }
 
 .pie ul li img {
     width: 40px;
     padding: 7px;
+}
+
+/*IVAN*/
+@media screen and (min-width: 1024px) {
+    /* .pie {
+        background-color: aqua;
+    } */
+}
+
+@media screen and (min-width: 1366px) {
+
+}
+
+@media screen and (min-width: 1920px) {
+
 }
