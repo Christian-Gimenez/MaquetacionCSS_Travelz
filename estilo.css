@@ -623,20 +623,44 @@ hr {
 
 .cardViaje {
     background-color: #d8b5ab;
-    border-radius: 25px;
+    border-radius: 0px 25px 25px 25px;
     padding-left: 1.5%;
     padding-right: 1.5%;
     overflow: auto;
     margin-bottom: 30px;
     padding-bottom: 5px;
+    /* position:relative; */
 }
 
+/* 
+codigo label-discount de Diego 
+.label-discount{
+    width: 110px;
+    height: 90px;
+    background-color: #904214;
+    transform: rotate(-45deg);
+    position: absolute;
+    top: -45%;
+    left: -15%;
+    
+}
+.label-discount :only-child{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    translate: -50%;
+    color:white;
+    font-family: 'Readex Pro';
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+} */
 .cardViaje:nth-of-type(2) {
     box-shadow: 2px 4px 5px #DE683C;
 }
 
 /*Descuento Madrid y Barcelona*/
-.descuento {
+/* .descuento {
     border-left: 34.5px solid #904214;
     border-right: 34.5px solid transparent;
     border-top: 34.5px solid #904214;
@@ -668,13 +692,13 @@ hr {
     top: 560px;
     left: 9px;
 
-}
-
+} */
+/* 
 .desc50bcn {
     position: absolute;
     top: 682px;
     left: 9px;
-}
+} */
 
 
 .cardViaje img {
