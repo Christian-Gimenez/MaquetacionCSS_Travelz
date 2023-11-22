@@ -141,6 +141,9 @@ body {
 button {
     border-style: none;
     background: none;
+    /*Le agrego interactividad.*/
+    cursor: pointer;
+    pointer-events: auto;
 }
 
 /*Hamburguesa botón menú desplegable*/
@@ -390,7 +393,7 @@ hr {
     .formulario .viajeros {
         padding-left: 10px;
         margin-left: 0px;
-        width:20.2%;
+        width: 20.2%;
     }
 
     .formulario .viajeros {
@@ -408,7 +411,7 @@ hr {
     .checkin input,
     .checkout input,
     .viajeros input {
-        width: 65%;        
+        width: 65%;
     }
 
     .formulario img[alt="ubicacion"],
@@ -478,7 +481,7 @@ hr {
         width: 31.28px;
         height: 29.11px;
         margin-right: 8px;
-        
+
     }
 
     /*Formularios*/
@@ -486,7 +489,7 @@ hr {
         width: 55px;
         height: auto;
     }
-    
+
     .formulario img[alt="calendario"],
     .formulario img[alt="monigote"] {
         width: 65px;
@@ -538,6 +541,7 @@ hr {
 
 /*Desktop*/
 @media screen and (min-width: 1920px) {
+
     /*Buscador y filtro*/
     .contenedor {
         max-width: 1432.8px;
@@ -562,7 +566,7 @@ hr {
         margin-top: 69px;
         margin-right: -60px;
         width: 140px;
-        
+
     }
 
     .formulario .localizacion,
@@ -584,7 +588,7 @@ hr {
     .formulario input {
         height: 22px;
     }
-    
+
     .formulario input::placeholder {
         font-size: 20px;
     }
@@ -623,7 +627,7 @@ hr {
 
 .cardViaje {
     background-color: #d8b5ab;
-    border-radius: 0px 25px 25px 25px;
+    border-radius: 25px 25px 25px 25px;
     padding-left: 1.5%;
     padding-right: 1.5%;
     overflow: auto;
@@ -714,9 +718,7 @@ codigo label-discount de Diego
     float: right;
     width: auto;
     height: auto;
-    padding-left: 1px;
-    padding-right: 1px;
-    line-height: 250%;
+    padding: 10px 1px;
     border-radius: 15px;
     background-color: #904214;
     color: #d8b5ab;
@@ -745,7 +747,7 @@ codigo label-discount de Diego
 }
 
 .cardViaje div hr {
-    width: 45%;
+    width: 125px;
     margin-top: 4px;
 }
 
@@ -769,9 +771,34 @@ codigo label-discount de Diego
 
 /*DIEGO*/
 @media screen and (min-width: 1024px) {
-    /* .cardViaje {
-        background-color: aqua;
-    } */
+    .cardViaje {
+        width: 46%;
+        height: auto;
+    }
+
+    .cardViaje:nth-child(odd) {
+        float: left;
+        margin-right: 5px;
+    }
+
+    .cardViaje:nth-child(even) {
+        float: right;
+    }
+
+    .cardViaje img {
+        width: 50%;
+        height: auto;
+    }
+
+    .cardViaje div h2 {
+        line-height: 70%;
+    }
+
+    .cardViaje button {
+        margin-top: 60px;
+    }
+
+
 }
 
 @media screen and (min-width: 1366px) {}
