@@ -109,10 +109,11 @@ button {
 }
 
 /*Estilos básicos de la página*/
+:root{font-size: 10px}
 body {
     font-family: 'Readex Pro', sans-serif;
     background-color: #8D9BAC;
-
+    
 }
 
 /*Centrado y ancho de contenedores de elementos*/
@@ -623,14 +624,13 @@ hr {
 /*Cartas de viajes*/
 .cards {
     margin-top: 30px;
+    position:relative;
 }
 
 .cardViaje {
     background-color: #d8b5ab;
-    border-radius: 25px 25px 25px 25px;
-    padding-left: 1.5%;
-    padding-right: 1.5%;
-    overflow: auto;
+    border-radius: 25px;
+    height: 110px;
     margin-bottom: 30px;
     padding-bottom: 5px;
     /* position:relative; */
@@ -708,47 +708,49 @@ codigo label-discount de Diego
 .cardViaje img {
     float: left;
     border-radius: 25px;
-    width: 113px;
+    width: 114px;
     margin-top: 5px;
-    height: 90px;
+    height: 98px;
     margin-right: 10px;
+    margin-left: 10px;
 }
 
 .cardViaje button {
     float: right;
     width: auto;
-    height: auto;
-    padding: 10px 1px;
+    padding: 10px 3px;
     border-radius: 15px;
     background-color: #904214;
     color: #d8b5ab;
-    font-size: 16px;
-    margin-top: 30px;
+    font-size: 1.6rem;
     font-family: "Readex Pro";
+    margin-right: 12px;
+    
 
 }
 
 .cardViaje div {
     color: #0E3157;
-    margin-top: 6px;
+   
 }
 
 .cardViaje div h2 {
-    margin-top: 20px;
     font-family: 'Jomhuria';
-    font-size: 50px;
+    font-size: 5rem;
     font-weight: 400;
-    line-height: 12px;
 }
-
-.cardViaje div p {
+.cardViaje div div{
+    margin-top: -12px;
+}
+.cardViaje div div {
     font-family: 'Readex Pro';
-    font-size: 11px;
+    font-size: 1.1rem;
 }
 
-.cardViaje div hr {
-    width: 125px;
-    margin-top: 4px;
+.cardViaje div div hr {
+    width: 130px;
+    margin-bottom: 5px;
+    margin-top: 5px;
 }
 
 .separadorFloat {
@@ -758,21 +760,23 @@ codigo label-discount de Diego
 
 .btnVerMas {
     font-family: "Readex Pro";
-    font-size: 21px;
+    font-size: 2.1rem;
     font-weight: 600;
     background-color: #D8B5AB;
     color: #0E3157;
     width: 129px;
     height: 42px;
-    border-radius: 20px;
-    margin-left: 33%;
+    border-radius: 25px;
     margin-bottom: 30px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
 }
 
 /*DIEGO*/
 @media screen and (min-width: 1024px) {
     .cardViaje {
-        width: 46%;
+        width: 49%;
         height: auto;
     }
 
@@ -791,17 +795,62 @@ codigo label-discount de Diego
     }
 
     .cardViaje div h2 {
-        line-height: 70%;
+        font-size:5.6rem;
     }
-
-    .cardViaje button {
-        margin-top: 60px;
+    .cardViaje div div{
+        margin-top: -10px;
     }
-
+    .cardViaje img {
+        margin-right: 10px;
+        
+    }
+    
+    .cardViaje div div button {
+        margin-top: 5px;
+        float: right;
+        width: auto;
+        padding: 7px 5px;
+        border-radius: 12px;
+        background-color: #904214;
+        color: #d8b5ab;
+        font-size: 1.6rem;
+        font-family: "Readex Pro";
+        margin-right: 5px;
+    
+    }
+    .cardViaje:nth-child(1n-1) {
+        box-shadow: 2px 4px 5px  #0E3157;
+    }
+    
 
 }
 
-@media screen and (min-width: 1366px) {}
+@media screen and (min-width: 1366px) {
+    .cardViaje div h2 {
+        font-size: 8rem;
+    }
+    .cardViaje div div button {
+        padding: 8px 10px;
+        font-size: 2.2rem;
+        margin-right: 15px;
+    }
+    .cardViaje div div {
+        font-size: 1.5rem;
+        
+    }
+    .cardViaje div div hr{
+        width: 27%;
+    }
+    .cardViaje img {
+        width: 47%;;
+    }
+    .btnVerMas {
+        width: 180px;
+        height: 60px;
+        font-size: 2.5rem;
+    }
+}
+
 
 @media screen and (min-width: 1920px) {}
 
