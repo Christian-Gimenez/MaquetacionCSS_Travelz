@@ -109,7 +109,10 @@ button {
 }
 
 /*Estilos básicos de la página*/
-:root{font-size: 10px}
+:root {
+    font-size: 10px
+}
+
 body {
     font-family: 'Readex Pro', sans-serif;
     background-color: #8D9BAC;
@@ -118,7 +121,8 @@ body {
 }
 
 /*Centrado y ancho de contenedores de elementos*/
-.contenedor, .contenedorCards {
+.contenedor,
+.contenedorCards {
     margin: 0 auto;
     width: 95%;
 }
@@ -197,6 +201,18 @@ button {
 @media screen and (min-width: 1366px) {}
 
 @media screen and (min-width: 1920px) {}
+
+
+.fotoHero {
+    display: none;
+}
+
+@media screen and (min-width: 1920px) {
+    .fotoHero {
+        display: block;
+        float: left;
+    }
+}
 
 /*Buscador*/
 .buscador {
@@ -623,12 +639,13 @@ hr {
 }
 
 /*Cartas de viajes*/
-.solo-escritorio{
+.solo-escritorio {
     display: none;
 }
+
 .cards {
     margin-top: 30px;
-    position:relative;
+    position: relative;
 }
 
 .cardViaje {
@@ -729,13 +746,13 @@ codigo label-discount de Diego
     font-size: 1.6rem;
     font-family: "Readex Pro";
     margin-right: 12px;
-    
+
 
 }
 
 .cardViaje div {
     color: #0E3157;
-   
+
 }
 
 .cardViaje div h2 {
@@ -743,9 +760,11 @@ codigo label-discount de Diego
     font-size: 5rem;
     font-weight: 400;
 }
-.cardViaje div div{
+
+.cardViaje div div {
     margin-top: -12px;
 }
+
 .cardViaje div div {
     font-family: 'Readex Pro';
     font-size: 1.1rem;
@@ -799,15 +818,17 @@ codigo label-discount de Diego
     }
 
     .cardViaje div h2 {
-        font-size:5.6rem;
+        font-size: 5.6rem;
     }
-    .cardViaje div div{
+
+    .cardViaje div div {
         margin-top: -10px;
     }
+
     .cardViaje img {
         margin-right: 10px;
     }
-    
+
     .cardViaje div div button {
         margin-top: 10px;
         float: right;
@@ -819,12 +840,13 @@ codigo label-discount de Diego
         font-size: 1.6rem;
         font-family: "Readex Pro";
         margin-right: 5px;
-    
+
     }
+
     .cardViaje:nth-child(1n-1) {
-        box-shadow: 2px 4px 5px  #0E3157;
+        box-shadow: 2px 4px 5px #0E3157;
     }
-    
+
 
 }
 
@@ -832,21 +854,26 @@ codigo label-discount de Diego
     .cardViaje div h2 {
         font-size: 8rem;
     }
+
     .cardViaje div div button {
         padding: 8px 10px;
         font-size: 2.2rem;
         margin-right: 15px;
     }
+
     .cardViaje div div {
         font-size: 1.5rem;
-        
+
     }
-    .cardViaje div div hr{
+
+    .cardViaje div div hr {
         width: 27%;
     }
+
     .cardViaje img {
         width: 47%;
     }
+
     .btnVerMas {
         width: 180px;
         height: 60px;
@@ -856,49 +883,58 @@ codigo label-discount de Diego
 
 
 @media screen and (min-width: 1920px) {
-.solo-escritorio{
+    .solo-escritorio {
         display: block;
         font-family: 'Readex Pro';
         font-size: 6.5rem;
         font-weight: 700;
         color: #D9D9D9;
-        text-align:center;
+        text-align: center;
         margin-bottom: 40px;
         margin-top: 20px;
     }
-section.cards.contenedorCards{
+
+    section.cards.contenedorCards {
         background-image: url(imagenes/DestinosDestacados-Transparente.png);
         background-size: cover;
         min-width: 100vw;
         margin-top: 60px;
-        }
-#nuevoContenedorEscritorio > .cardViaje {
-  width: 31.5%;
-  height: 230px;
-}   
-#nuevoContenedorEscritorio > .cardViaje:nth-child(odd) {
-   margin-left: 8%;
-  }   
-#nuevoContenedorEscritorio > .cardViaje:nth-child(even) {
-    margin-right: 8%;
-    
-   }   
+    }
 
-.cardViaje img{
-    width: 232px;
-    height: 197px;
-    margin-top: 18px;
+    #nuevoContenedorEscritorio>.cardViaje {
+        width: 31.5%;
+        height: 230px;
+    }
+
+    #nuevoContenedorEscritorio>.cardViaje:nth-child(odd) {
+        margin-left: 8%;
+    }
+
+    #nuevoContenedorEscritorio>.cardViaje:nth-child(even) {
+        margin-right: 8%;
+
+    }
+
+    .cardViaje img {
+        width: 232px;
+        height: 197px;
+        margin-top: 18px;
+    }
+
+    .cardViaje div h2 {
+        font-size: 6.6rem;
+        margin-top: 25px;
+    }
+
+    .cardViaje div div {
+        font-size: 1.6rem;
+    }
+
+    .cardViaje div div button {
+        padding: 18px;
+    }
 }
-.cardViaje div h2{
-    font-size: 6.6rem;
-    margin-top: 25px;
-}
-.cardViaje div div {
-    font-size: 1.6rem;
-}
-.cardViaje div div button{
-    padding: 18px;
-}
+
 /* Footer*/
 .pie {
     padding: 20px;
@@ -942,13 +978,11 @@ section.cards.contenedorCards{
     padding: 7px;
 }
 
+
 /*IVAN*/
-@media screen and (min-width: 1024px) {
-    /* .pie {
-        background-color: aqua;
-    } */
+/* @media screen and (min-width: 1024px) {
 }
 
 @media screen and (min-width: 1366px) {}
 
-@media screen and (min-width: 1920px) {}
+@media screen and (min-width: 1920px) {} */
