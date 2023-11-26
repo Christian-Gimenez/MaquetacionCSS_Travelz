@@ -756,74 +756,9 @@ hr {
     /* position:relative; */
 }
 
-/* 
-codigo label-discount de Diego 
-.label-discount{
-    width: 110px;
-    height: 90px;
-    background-color: #904214;
-    transform: rotate(-45deg);
-    position: absolute;
-    top: -45%;
-    left: -15%;
-    
-}
-.label-discount :only-child{
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    translate: -50%;
-    color:white;
-    font-family: 'Readex Pro';
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 25px;
-} */
 .cardViaje:nth-of-type(2) {
     box-shadow: 2px 4px 5px #DE683C;
 }
-
-/*Descuento Madrid y Barcelona*/
-/* .descuento {
-    border-left: 34.5px solid #904214;
-    border-right: 34.5px solid transparent;
-    border-top: 34.5px solid #904214;
-    border-bottom: 34.5px solid transparent;
-}
-
-.desc {
-    transform: rotate(-45deg);
-    text-shadow: 1px 1px 3px rgb(61, 61, 61);
-    font-size: 20px;
-    font-weight: bold;
-    color: white;
-}
-
-.desc20 {
-    position: absolute;
-    top: 571px;
-    left: 3px;
-}
-
-.desc50 {
-    position: absolute;
-    top: 701px;
-    left: 3px;
-}
-
-.desc20mad {
-    position: absolute;
-    top: 560px;
-    left: 9px;
-
-} */
-/* 
-.desc50bcn {
-    position: absolute;
-    top: 682px;
-    left: 9px;
-} */
-
 
 .cardViaje img {
     float: left;
@@ -1069,7 +1004,6 @@ codigo label-discount de Diego
 .redes {
     float: right;
     list-style: none;
-    margin-right: 30px;
     margin-top: 95px;
 }
 
@@ -1085,7 +1019,7 @@ codigo label-discount de Diego
 /*IVAN*/
 @media screen and (min-width: 1024px) {
     .pie {
-        min-height: 30vh;
+        min-height: 26vh;
     }
 
     .logoTravelzFooter {
@@ -1149,7 +1083,7 @@ codigo label-discount de Diego
 
 @media screen and (min-width: 1366px) {
     .pie {
-        min-height: 40vh;
+        min-height: 31vh;
     }
 
     .logoTravelzFooter {
@@ -1180,7 +1114,7 @@ codigo label-discount de Diego
     .pie h3 {
         font-size: 40px;
     }
-    
+
     .pie a {
         font-size: 25px;
     }
@@ -1188,7 +1122,7 @@ codigo label-discount de Diego
 
 @media screen and (min-width: 1920px) {
     .pie {
-        min-height: 50vh;
+        min-height: 38vh;
     }
 
     .logoTravelzFooter {
@@ -1220,12 +1154,12 @@ codigo label-discount de Diego
         margin-left: 100px;
         margin-right: 55px;
     }
-    
+
 
     .pie h3 {
         font-size: 50px;
     }
-    
+
     .pie a {
         font-size: 30px;
     }
