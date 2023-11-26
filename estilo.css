@@ -132,6 +132,20 @@ body {
     visibility: hidden;
     clear: both;
 }
+/*Quitarle a los botones los estilos por defecto*/
+button {
+    border-style: none;
+    background: none;
+    /*Le agrego interactividad.*/
+    cursor: pointer;
+    pointer-events: auto;
+}
+
+/*Quitarle a los botones los estilos por defecto*/
+button {
+    border-style: none;
+    background: none;
+}
 
 /*Cabecera menú de arriba*/
 .cabecera {
@@ -143,17 +157,9 @@ body {
     padding: 16px 10px 5px 10px;
 }
 
-/*Quitarle a los botones los estilos por defecto*/
-button {
-    border-style: none;
-    background: none;
-    /*Le agrego interactividad.*/
-    cursor: pointer;
-    pointer-events: auto;
-}
 
 /*Hamburguesa botón menú desplegable*/
-.cabecera button:first-child img {
+.cabecera > button:first-child img {
     width: 45px;
     height: 28px;
 }
@@ -191,27 +197,88 @@ button {
     float: right;
 }
 
-/*AHMED*/
-@media screen and (min-width: 1024px) {
-    /* .cabecera {
-        background-color: aqua;
-    } */
-}
-
 @media screen and (min-width: 1366px) {}
-
-@media screen and (min-width: 1920px) {}
-
-
-.fotoHero {
-    display: none;
-}
-
-@media screen and (min-width: 1920px) {
-    .fotoHero {
-        display: block;
-        float: left;
+@media screen and (max-width: 1919px) {
+    .cabecera ul,li{
+        display: none;
     }
+}
+@media screen and (min-width: 1920px) {
+    .cabecera {
+        background-color: #0E3157;
+        font-family: 'Jomhuria', sans-serif;
+        color: white;
+        height: 125px;
+        padding: 16px 10px 5px 10px;
+    }
+    .cabecera ul{
+        width: 1204px;
+        margin-top: 55px;
+    }
+    .cabecera ul,li{
+        display: inline-block;
+        height: 42px;
+        padding-bottom: -10px;
+    }
+    .cabecera li{
+        padding-right: 40px;
+    }
+    .cabecera li{
+        list-style: none;
+        margin-right: 40px;
+        border-right: 3px solid #8D9BAC;
+    }
+    .cabecera li:last-child {
+        border: none;
+    }
+    .cabecera li button{
+        font-size: 36px;
+        color: #8D9BAC;
+        font-family:'Roboto', Arial, Helvetica, sans-serif ;
+        font-weight: 700;
+        
+        
+    }
+    
+    .cabecera ul + button img {
+        width: 51px;
+        height: 51px;
+    }
+    .cabecera  button img {
+        padding-bottom: 5px;
+        margin-left: 15px;
+    }
+    .cabecera ul + button img {
+        margin: 35px 65px 0 0;
+    }
+
+    .cabecera > button:first-child{
+        display: none;
+    }
+
+    /*Poner en linea los elementos de la cabecera*/
+    .cabecera div {
+        width: 444px;
+        float:left;
+        margin: 35px 0 0 10px;
+    }
+
+    /*Logo Travelz*/
+    .cabecera div img {
+        width: 59px;
+        height: 59px;
+        float: left;
+        margin-left: 15px;
+    }
+
+    /*Texto: TRAVELZ*/
+    .cabecera div h1 {
+        font-weight: 100;
+        font-size: 120px;
+        line-height: 80px;
+        float:left;
+    }
+
 }
 
 /*Buscador*/
@@ -985,4 +1052,4 @@ codigo label-discount de Diego
 
 @media screen and (min-width: 1366px) {}
 
-@media screen and (min-width: 1920px) {} */
+@media screen and (min-width: 1920px) {}
