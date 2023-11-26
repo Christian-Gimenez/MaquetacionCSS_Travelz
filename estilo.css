@@ -96,6 +96,7 @@ p,
 header,
 label,
 input,
+figure,
 ul,
 body,
 html,
@@ -128,10 +129,10 @@ body {
 }
 
 .clearfix {
-    display: inline;
     visibility: hidden;
     clear: both;
 }
+
 /*Quitarle a los botones los estilos por defecto*/
 button {
     border-style: none;
@@ -141,11 +142,6 @@ button {
     pointer-events: auto;
 }
 
-/*Quitarle a los botones los estilos por defecto*/
-button {
-    border-style: none;
-    background: none;
-}
 
 /*Cabecera menú de arriba*/
 .cabecera {
@@ -159,7 +155,7 @@ button {
 
 
 /*Hamburguesa botón menú desplegable*/
-.cabecera > button:first-child img {
+.cabecera>button:first-child img {
     width: 45px;
     height: 28px;
 }
@@ -197,12 +193,19 @@ button {
     float: right;
 }
 
+/*AHMED*/
+@media screen and (min-width: 1024px) {}
+
 @media screen and (min-width: 1366px) {}
+
 @media screen and (max-width: 1919px) {
-    .cabecera ul,li{
+
+    .cabecera ul,
+    .cabecera li {
         display: none;
     }
 }
+
 @media screen and (min-width: 1920px) {
     .cabecera {
         background-color: #0E3157;
@@ -211,55 +214,64 @@ button {
         height: 125px;
         padding: 16px 10px 5px 10px;
     }
-    .cabecera ul{
+
+    .cabecera ul {
         width: 1204px;
         margin-top: 55px;
     }
-    .cabecera ul,li{
+
+    .cabecera ul,
+    li {
         display: inline-block;
         height: 42px;
         padding-bottom: -10px;
     }
-    .cabecera li{
+
+    .cabecera li {
         padding-right: 40px;
     }
-    .cabecera li{
+
+    .cabecera li {
         list-style: none;
         margin-right: 40px;
         border-right: 3px solid #8D9BAC;
     }
+
     .cabecera li:last-child {
         border: none;
     }
-    .cabecera li button{
+
+    .cabecera li button {
         font-size: 36px;
         color: #8D9BAC;
-        font-family:'Roboto', Arial, Helvetica, sans-serif ;
+        font-family: 'Roboto', Arial, Helvetica, sans-serif;
         font-weight: 700;
-        
-        
+
+
     }
-    
-    .cabecera ul + button img {
+
+    .cabecera ul+button img {
         width: 51px;
         height: 51px;
     }
-    .cabecera  button img {
+
+    .cabecera button img {
         padding-bottom: 5px;
         margin-left: 15px;
     }
-    .cabecera ul + button img {
+
+    .cabecera ul+button img {
         margin: 35px 65px 0 0;
     }
 
-    .cabecera > button:first-child{
+    .cabecera>button:first-child {
         display: none;
     }
 
     /*Poner en linea los elementos de la cabecera*/
     .cabecera div {
         width: 444px;
-        float:left;
+        float: left;
         margin: 35px 0 0 10px;
     }
 
@@ -276,9 +288,29 @@ button {
         font-weight: 100;
         font-size: 120px;
         line-height: 80px;
-        float:left;
+        float: left;
     }
 
+}
+
+/*Foto hero*/
+.fotoHero {
+    display: none;
+}
+
+@media screen and (min-width: 1920px) {
+    .fotoHero {
+        display: inline-block;
+        text-align: center;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .fotoHero img {
+        width: 24.87%;
+        padding: 0;
+        height: 333.58px;
+    }
 }
 
 /*Buscador*/
@@ -1034,22 +1066,167 @@ codigo label-discount de Diego
     color: white;
 }
 
-.pie ul {
+.redes {
     float: right;
     list-style: none;
-    margin-top: 60px;
+    margin-right: 30px;
+    margin-top: 95px;
 }
 
-.pie ul li img {
+.redes img {
     width: 40px;
-    padding: 7px;
+    margin-top: 15px;
 }
 
+.logoTravelzFooter {
+    display: none;
+}
 
 /*IVAN*/
-/* @media screen and (min-width: 1024px) {
+@media screen and (min-width: 1024px) {
+    .pie {
+        min-height: 30vh;
+    }
+
+    .logoTravelzFooter {
+        float: left;
+        display: block;
+    }
+
+    .logoTravelzFooter img {
+        padding: 6px;
+        margin-bottom: -5px;
+        width: 58px;
+        background-color: white;
+        border-radius: 18px;
+    }
+
+    .logoTravelzFooter span {
+        font-size: 160px;
+        font-family: 'Jomhuria';
+        font-weight: 100;
+        margin-left: 20px;
+    }
+
+    .redes {
+        float: left;
+        clear: left;
+        display: block;
+        margin-right: 0;
+        margin-top: 0;
+    }
+
+    .redes li {
+        display: inline-block;
+        margin-right: 20px;
+    }
+
+    .contacto {
+        float: right;
+        margin-top: -193px;
+    }
+
+    .contacto div {
+        float: left;
+        padding: 20px;
+        letter-spacing: 2px;
+        margin: 10px;
+    }
+
+    .contacto a {
+        text-decoration: none;
+        color: white;
+        display: block;
+        font-size: 19px;
+
+    }
+
+    .contacto h3 {
+        font-size: 28px;
+    }
+
 }
 
-@media screen and (min-width: 1366px) {}
+@media screen and (min-width: 1366px) {
+    .pie {
+        min-height: 40vh;
+    }
 
-@media screen and (min-width: 1920px) {}
+    .logoTravelzFooter {
+        margin-left: 20px;
+    }
+
+    .logoTravelzFooter img {
+        width: 68px;
+    }
+
+    .logoTravelzFooter span {
+        font-size: 180px;
+    }
+
+    .redes {
+        margin-left: 20px;
+    }
+
+    .redes img {
+        width: 55px;
+
+    }
+
+    .contacto {
+        margin-top: -200px;
+    }
+
+    .pie h3 {
+        font-size: 40px;
+    }
+    
+    .pie a {
+        font-size: 25px;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .pie {
+        min-height: 50vh;
+    }
+
+    .logoTravelzFooter {
+        margin-left: 60px;
+    }
+
+    .logoTravelzFooter span {
+        font-size: 240px;
+    }
+
+    .logoTravelzFooter img {
+        width: 90px;
+    }
+
+    .redes {
+        margin-left: 40px;
+    }
+
+    .redes img {
+        width: 65px;
+        margin-left: 23px;
+    }
+
+    .contacto {
+        margin-top: -255px;
+    }
+
+    .contacto .contacto-der {
+        margin-left: 100px;
+        margin-right: 55px;
+    }
+    
+
+    .pie h3 {
+        font-size: 50px;
+    }
+    
+    .pie a {
+        font-size: 30px;
+    }
+}
