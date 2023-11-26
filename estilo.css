@@ -118,7 +118,7 @@ body {
 }
 
 /*Centrado y ancho de contenedores de elementos*/
-.contenedor {
+.contenedor, .contenedorCards {
     margin: 0 auto;
     width: 95%;
 }
@@ -866,7 +866,7 @@ codigo label-discount de Diego
         margin-bottom: 40px;
         margin-top: 20px;
     }
-section.cards.contenedor{
+section.cards.contenedorCards{
         background-image: url(imagenes/DestinosDestacados-Transparente.png);
         background-size: cover;
         min-width: 100vw;
