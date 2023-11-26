@@ -109,14 +109,16 @@ button {
 }
 
 /*Estilos básicos de la página*/
+:root{font-size: 10px}
 body {
     font-family: 'Readex Pro', sans-serif;
     background-color: #8D9BAC;
+    box-sizing: border-box;
 
 }
 
 /*Centrado y ancho de contenedores de elementos*/
-.contenedor {
+.contenedor, .contenedorCards {
     margin: 0 auto;
     width: 95%;
 }
@@ -141,6 +143,9 @@ body {
 button {
     border-style: none;
     background: none;
+    /*Le agrego interactividad.*/
+    cursor: pointer;
+    pointer-events: auto;
 }
 
 /*Hamburguesa botón menú desplegable*/
@@ -390,7 +395,7 @@ hr {
     .formulario .viajeros {
         padding-left: 10px;
         margin-left: 0px;
-        width:20.2%;
+        width: 20.2%;
     }
 
     .formulario .viajeros {
@@ -408,7 +413,7 @@ hr {
     .checkin input,
     .checkout input,
     .viajeros input {
-        width: 65%;        
+        width: 65%;
     }
 
     .formulario img[alt="ubicacion"],
@@ -478,7 +483,7 @@ hr {
         width: 31.28px;
         height: 29.11px;
         margin-right: 8px;
-        
+
     }
 
     /*Formularios*/
@@ -486,7 +491,7 @@ hr {
         width: 55px;
         height: auto;
     }
-    
+
     .formulario img[alt="calendario"],
     .formulario img[alt="monigote"] {
         width: 65px;
@@ -538,6 +543,7 @@ hr {
 
 /*Desktop*/
 @media screen and (min-width: 1920px) {
+
     /*Buscador y filtro*/
     .contenedor {
         max-width: 1432.8px;
@@ -562,7 +568,7 @@ hr {
         margin-top: 69px;
         margin-right: -60px;
         width: 140px;
-        
+
     }
 
     .formulario .localizacion,
@@ -584,7 +590,7 @@ hr {
     .formulario input {
         height: 22px;
     }
-    
+
     .formulario input::placeholder {
         font-size: 20px;
     }
@@ -617,26 +623,52 @@ hr {
 }
 
 /*Cartas de viajes*/
+.solo-escritorio{
+    display: none;
+}
 .cards {
     margin-top: 30px;
+    position:relative;
 }
 
 .cardViaje {
     background-color: #d8b5ab;
     border-radius: 25px;
-    padding-left: 1.5%;
-    padding-right: 1.5%;
-    overflow: auto;
+    height: 110px;
     margin-bottom: 30px;
     padding-bottom: 5px;
+    /* position:relative; */
 }
 
+/* 
+codigo label-discount de Diego 
+.label-discount{
+    width: 110px;
+    height: 90px;
+    background-color: #904214;
+    transform: rotate(-45deg);
+    position: absolute;
+    top: -45%;
+    left: -15%;
+    
+}
+.label-discount :only-child{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    translate: -50%;
+    color:white;
+    font-family: 'Readex Pro';
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+} */
 .cardViaje:nth-of-type(2) {
     box-shadow: 2px 4px 5px #DE683C;
 }
 
 /*Descuento Madrid y Barcelona*/
-.descuento {
+/* .descuento {
     border-left: 34.5px solid #904214;
     border-right: 34.5px solid transparent;
     border-top: 34.5px solid #904214;
@@ -668,61 +700,61 @@ hr {
     top: 560px;
     left: 9px;
 
-}
-
+} */
+/* 
 .desc50bcn {
     position: absolute;
     top: 682px;
     left: 9px;
-}
+} */
 
 
 .cardViaje img {
     float: left;
     border-radius: 25px;
-    width: 113px;
+    width: 114px;
     margin-top: 5px;
-    height: 90px;
+    height: 98px;
     margin-right: 10px;
+    margin-left: 10px;
 }
 
 .cardViaje button {
     float: right;
     width: auto;
-    height: auto;
-    padding-left: 1px;
-    padding-right: 1px;
-    line-height: 250%;
+    padding: 10px 3px;
     border-radius: 15px;
     background-color: #904214;
     color: #d8b5ab;
-    font-size: 16px;
-    margin-top: 30px;
+    font-size: 1.6rem;
     font-family: "Readex Pro";
+    margin-right: 12px;
+    
 
 }
 
 .cardViaje div {
     color: #0E3157;
-    margin-top: 6px;
+   
 }
 
 .cardViaje div h2 {
-    margin-top: 20px;
     font-family: 'Jomhuria';
-    font-size: 50px;
+    font-size: 5rem;
     font-weight: 400;
-    line-height: 12px;
 }
-
-.cardViaje div p {
+.cardViaje div div{
+    margin-top: -12px;
+}
+.cardViaje div div {
     font-family: 'Readex Pro';
-    font-size: 11px;
+    font-size: 1.1rem;
 }
 
-.cardViaje div hr {
-    width: 45%;
-    margin-top: 4px;
+.cardViaje div div hr {
+    width: 130px;
+    margin-bottom: 5px;
+    margin-top: 5px;
 }
 
 .separadorFloat {
@@ -732,28 +764,141 @@ hr {
 
 .btnVerMas {
     font-family: "Readex Pro";
-    font-size: 21px;
+    font-size: 2.1rem;
     font-weight: 600;
     background-color: #D8B5AB;
     color: #0E3157;
     width: 129px;
     height: 42px;
-    border-radius: 20px;
-    margin-left: 33%;
+    border-radius: 25px;
     margin-bottom: 30px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
 }
 
 /*DIEGO*/
 @media screen and (min-width: 1024px) {
-    /* .cardViaje {
-        background-color: aqua;
-    } */
+    .cardViaje {
+        width: 49%;
+        height: auto;
+    }
+
+    .cardViaje:nth-child(odd) {
+        float: left;
+        margin-right: 5px;
+    }
+
+    .cardViaje:nth-child(even) {
+        float: right;
+    }
+
+    .cardViaje img {
+        width: 50%;
+        height: auto;
+    }
+
+    .cardViaje div h2 {
+        font-size:5.6rem;
+    }
+    .cardViaje div div{
+        margin-top: -10px;
+    }
+    .cardViaje img {
+        margin-right: 10px;
+    }
+    
+    .cardViaje div div button {
+        margin-top: 10px;
+        float: right;
+        width: auto;
+        padding: 7px 5px;
+        border-radius: 12px;
+        background-color: #904214;
+        color: #d8b5ab;
+        font-size: 1.6rem;
+        font-family: "Readex Pro";
+        margin-right: 5px;
+    
+    }
+    .cardViaje:nth-child(1n-1) {
+        box-shadow: 2px 4px 5px  #0E3157;
+    }
+    
+
 }
 
-@media screen and (min-width: 1366px) {}
+@media screen and (min-width: 1366px) {
+    .cardViaje div h2 {
+        font-size: 8rem;
+    }
+    .cardViaje div div button {
+        padding: 8px 10px;
+        font-size: 2.2rem;
+        margin-right: 15px;
+    }
+    .cardViaje div div {
+        font-size: 1.5rem;
+        
+    }
+    .cardViaje div div hr{
+        width: 27%;
+    }
+    .cardViaje img {
+        width: 47%;
+    }
+    .btnVerMas {
+        width: 180px;
+        height: 60px;
+        font-size: 2.5rem;
+    }
+}
 
-@media screen and (min-width: 1920px) {}
 
+@media screen and (min-width: 1920px) {
+.solo-escritorio{
+        display: block;
+        font-family: 'Readex Pro';
+        font-size: 6.5rem;
+        font-weight: 700;
+        color: #D9D9D9;
+        text-align:center;
+        margin-bottom: 40px;
+        margin-top: 20px;
+    }
+section.cards.contenedorCards{
+        background-image: url(imagenes/DestinosDestacados-Transparente.png);
+        background-size: cover;
+        min-width: 100vw;
+        margin-top: 60px;
+        }
+#nuevoContenedorEscritorio > .cardViaje {
+  width: 31.5%;
+  height: 230px;
+}   
+#nuevoContenedorEscritorio > .cardViaje:nth-child(odd) {
+   margin-left: 8%;
+  }   
+#nuevoContenedorEscritorio > .cardViaje:nth-child(even) {
+    margin-right: 8%;
+    
+   }   
+
+.cardViaje img{
+    width: 232px;
+    height: 197px;
+    margin-top: 18px;
+}
+.cardViaje div h2{
+    font-size: 6.6rem;
+    margin-top: 25px;
+}
+.cardViaje div div {
+    font-size: 1.6rem;
+}
+.cardViaje div div button{
+    padding: 18px;
+}
 /* Footer*/
 .pie {
     padding: 20px;
