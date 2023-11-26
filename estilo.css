@@ -109,14 +109,16 @@ button {
 }
 
 /*Estilos básicos de la página*/
+:root{font-size: 10px}
 body {
     font-family: 'Readex Pro', sans-serif;
     background-color: #8D9BAC;
+    box-sizing: border-box;
 
 }
 
 /*Centrado y ancho de contenedores de elementos*/
-.contenedor {
+.contenedor, .contenedorCards {
     margin: 0 auto;
     width: 95%;
 }
@@ -125,12 +127,6 @@ body {
     display: inline;
     visibility: hidden;
     clear: both;
-}
-
-/*Quitarle a los botones los estilos por defecto*/
-button {
-    border-style: none;
-    background: none;
 }
 
 /*Cabecera menú de arriba*/
@@ -143,9 +139,17 @@ button {
     padding: 16px 10px 5px 10px;
 }
 
+/*Quitarle a los botones los estilos por defecto*/
+button {
+    border-style: none;
+    background: none;
+    /*Le agrego interactividad.*/
+    cursor: pointer;
+    pointer-events: auto;
+}
 
 /*Hamburguesa botón menú desplegable*/
-.cabecera > button:first-child img {
+.cabecera button:first-child img {
     width: 45px;
     height: 28px;
 }
@@ -184,88 +188,767 @@ button {
 }
 
 /*AHMED*/
-@media screen and (min-width: 1024px) {}
+@media screen and (min-width: 1024px) {
+    /* .cabecera {
+        background-color: aqua;
+    } */
+}
 
 @media screen and (min-width: 1366px) {}
-@media screen and (max-width: 1919px) {
-    .cabecera ul,li{
-        display: none;
+
+@media screen and (min-width: 1920px) {}
+
+/*Buscador*/
+.buscador {
+    background-color: #C1846A;
+    border-radius: 25px;
+    margin-top: 20px;
+    color: #0E3157;
+    font-weight: bold;
+    padding: 15px 0px;
+}
+
+
+.buscador a {
+    color: #0E3157;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/*Botón de filtrar*/
+.filtros img {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+}
+
+.filtros {
+    color: #0E3157;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+.filtros button {
+    float: left;
+}
+
+.filtros span {
+    font-size: 14px;
+    color: #0E3157;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.filtros div {
+    float: right;
+    line-height: 16px;
+}
+
+.separadorForm {
+    display: none;
+}
+
+/*Formulario naranja de vuelos*/
+.formulario div {
+    font-size: 16px;
+    padding: 10px;
+}
+
+.formulario .localizacion,
+.formulario .checkin,
+.formulario .checkout,
+.formulario .viajeros {
+    margin-left: 14px;
+}
+
+.formulario label {
+    margin-top: 10px;
+}
+
+.formulario img {
+    float: left;
+    width: 40px;
+    height: 50px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+}
+
+
+.formulario img[alt="ubicacion"] {
+    width: 38px;
+    margin-right: 21.5px;
+}
+
+.formulario img[alt="calendario"] {
+    width: 49px;
+}
+
+.formulario img[alt="monigote"] {
+    width: 44px;
+    margin-right: 15px;
+}
+
+/*Lineas separadores formulario vuelos*/
+hr {
+    width: 87%;
+    border-color: #0E3157;
+    margin-left: 17px;
+}
+
+/*Estilos formularios*/
+.formulario input[type="text"] {
+    border: none;
+    background-color: transparent;
+}
+
+.formulario input::placeholder {
+    font-size: 16px;
+    font-family: Roboto;
+    font-weight: bold;
+    color: #0e31575b;
+}
+
+.formulario label {
+    font-size: 14px;
+}
+
+.formulario button {
+    background-color: #0E3157;
+    color: white;
+    border-radius: 25px;
+    width: 265px;
+    height: 32.06px;
+    font-size: 26px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.formulario button img {
+    width: 25px;
+    height: 25px;
+    margin-left: 42px;
+    margin-right: -50px;
+    margin-top: 2px;
+}
+
+.btnBuscar {
+    text-align: center;
+}
+
+/*Estilo input tipo radio de opciones*/
+.opcionales {
+    margin-top: 12px;
+    text-align: center;
+}
+
+.opcionales label {
+    margin-left: 1%;
+}
+
+/*Tablet de pie (iPad Pro)*/
+@media screen and (min-width: 1024px) {
+
+    /*Buscador y filtro*/
+    .buscador {
+        height: 165px;
+    }
+
+    .filtros div {
+        float: left;
+        width: 50%;
+    }
+
+    .filtros div span {
+        margin-right: 5%;
+        margin-left: 5%;
+    }
+
+    .filtros button {
+        float: right;
+    }
+
+    /*Formularios*/
+    .separadorForm {
+        display: block;
+        width: 100%;
+        margin-left: 0px;
+    }
+
+    .formulario div {
+        float: left;
+    }
+
+
+    .formulario hr {
+        float: left;
+        display: inline-block;
+        margin-left: -40px;
+        margin-top: 45px;
+        margin-right: -46px;
+        width: 91.88px;
+        transform: rotate(90deg);
+    }
+
+    .formulario .localizacion,
+    .formulario .checkin,
+    .formulario .checkout,
+    .formulario .viajeros {
+        padding-left: 10px;
+        margin-left: 0px;
+        width: 20.2%;
+    }
+
+    .formulario .viajeros {
+        width: 24%;
+    }
+
+    .localizacion label,
+    .checkin label,
+    .checkout label,
+    .viajeros label {
+        font-size: 18px;
+    }
+
+    .localizacion input,
+    .checkin input,
+    .checkout input,
+    .viajeros input {
+        width: 65%;
+    }
+
+    .formulario img[alt="ubicacion"],
+    .formulario img[alt="calendario"],
+    .formulario img[alt="monigote"] {
+        margin-right: 8px;
+    }
+
+    .formulario input::placeholder {
+        font-size: 14px;
+    }
+
+    /*Botón Buscar*/
+    .btnBuscar {
+        position: relative;
+        bottom: 0px;
+        left: 5%;
+    }
+
+    .btnBuscar button {
+        line-height: 31px;
+        font-size: 16px;
+        height: 47.22px;
+        width: 163.36px;
+        padding-left: 10px;
+    }
+
+    .btnBuscar button img {
+        margin-left: 22px;
+    }
+
+    /*Radio buttons*/
+    .opcionales {
+        text-align: left;
+        width: 70%;
+        margin-top: 0;
+    }
+
+    .opcionales label {
+        margin-left: 12%;
+    }
+
+    .opcionales input {
+        margin-top: 30px;
+        margin-right: 2%;
+    }
+
+    input[type="radio"] {
+        transform: scale(1.5);
     }
 }
+
+/*Tablet tumbada (iPad Pro)*/
+@media screen and (min-width: 1366px) {
+
+    /*Buscador y filtro*/
+    .buscador {
+        height: 220px;
+    }
+
+    .buscador a,
+    .filtros span {
+        font-size: 22px;
+    }
+
+    .filtros img {
+        width: 31.28px;
+        height: 29.11px;
+        margin-right: 8px;
+
+    }
+
+    /*Formularios*/
+    .formulario img[alt="ubicacion"] {
+        width: 55px;
+        height: auto;
+    }
+
+    .formulario img[alt="calendario"],
+    .formulario img[alt="monigote"] {
+        width: 65px;
+        height: auto;
+    }
+
+    .formulario .localizacion,
+    .formulario .checkin,
+    .formulario .checkout,
+    .formulario .viajeros {
+        margin-top: 10px;
+    }
+
+    .localizacion label,
+    .checkin label,
+    .checkout label,
+    .viajeros label {
+        font-size: 24px;
+    }
+
+    .formulario input::placeholder {
+        font-size: 18px;
+    }
+
+    .formulario button img {
+        margin-right: -30px;
+        width: 28px;
+        height: auto;
+    }
+
+    .btnBuscar button {
+        font-size: 26px;
+        width: 200px;
+        height: 60px;
+        border-radius: 200px;
+        line-height: 32px;
+    }
+
+    .formulario label {
+        font-size: 20px;
+    }
+
+    /*Radio buttons*/
+    input[type="radio"] {
+        transform: scale(2);
+    }
+
+}
+
+/*Desktop*/
 @media screen and (min-width: 1920px) {
-    .cabecera {
-        background-color: #0E3157;
-        font-family: 'Jomhuria', sans-serif;
-        color: white;
-        height: 125px;
-        padding: 16px 10px 5px 10px;
+
+    /*Buscador y filtro*/
+    .contenedor {
+        max-width: 1432.8px;
+        padding-top: 15px;
     }
-    .cabecera ul{
-        width: 1204px;
-        margin-top: 55px;
+
+    .buscador {
+        height: 287px;
     }
-    .cabecera ul,li{
-        display: inline-block;
-        height: 42px;
-        padding-bottom: -10px;
+
+    .filtros img {
+        margin-bottom: 3px;
     }
-    .cabecera li{
-        padding-right: 40px;
+
+    /*Formularios*/
+    .separadorForm {
+        margin-top: 50px;
     }
-    .cabecera li{
-        list-style: none;
-        margin-right: 40px;
-        border-right: 3px solid #8D9BAC;
+
+    .formulario hr {
+        margin-left: -60px;
+        margin-top: 69px;
+        margin-right: -60px;
+        width: 140px;
+
     }
-    .cabecera li:last-child {
-        border: none;
+
+    .formulario .localizacion,
+    .formulario .checkin,
+    .formulario .checkout,
+    .formulario .viajeros {
+        margin-top: 20px;
     }
-    .cabecera li button{
+
+    .localizacion label,
+    .checkin label,
+    .checkout label,
+    .viajeros label {
+        margin-top: 5px;
+        font-size: 32px;
+        line-height: 34px;
+    }
+
+    .formulario input {
+        height: 22px;
+    }
+
+    .formulario input::placeholder {
+        font-size: 20px;
+    }
+
+    .formulario button img {
+        width: 40px;
+    }
+
+    /*Botón buscar*/
+    .btnBuscar {
+        bottom: -15px;
+    }
+
+    .btnBuscar button {
         font-size: 36px;
-        color: #8D9BAC;
-        font-family:'Roboto', Arial, Helvetica, sans-serif ;
-        font-weight: 700;
-        
-        
+        width: 238px;
+        height: 72.08px;
+        border-radius: 450px;
+        line-height: 43px;
+    }
+
+    /*Radio buttons*/
+    .opcionales {
+        margin-top: 30px;
+    }
+
+    input[type="radio"] {
+        transform: scale(2.5);
+    }
+}
+
+/*Cartas de viajes*/
+.solo-escritorio{
+    display: none;
+}
+.cards {
+    margin-top: 30px;
+    position:relative;
+}
+
+.cardViaje {
+    background-color: #d8b5ab;
+    border-radius: 25px;
+    height: 110px;
+    margin-bottom: 30px;
+    padding-bottom: 5px;
+    /* position:relative; */
+}
+
+/* 
+codigo label-discount de Diego 
+.label-discount{
+    width: 110px;
+    height: 90px;
+    background-color: #904214;
+    transform: rotate(-45deg);
+    position: absolute;
+    top: -45%;
+    left: -15%;
+    
+}
+.label-discount :only-child{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    translate: -50%;
+    color:white;
+    font-family: 'Readex Pro';
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+} */
+.cardViaje:nth-of-type(2) {
+    box-shadow: 2px 4px 5px #DE683C;
+}
+
+/*Descuento Madrid y Barcelona*/
+/* .descuento {
+    border-left: 34.5px solid #904214;
+    border-right: 34.5px solid transparent;
+    border-top: 34.5px solid #904214;
+    border-bottom: 34.5px solid transparent;
+}
+
+.desc {
+    transform: rotate(-45deg);
+    text-shadow: 1px 1px 3px rgb(61, 61, 61);
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+.desc20 {
+    position: absolute;
+    top: 571px;
+    left: 3px;
+}
+
+.desc50 {
+    position: absolute;
+    top: 701px;
+    left: 3px;
+}
+
+.desc20mad {
+    position: absolute;
+    top: 560px;
+    left: 9px;
+
+} */
+/* 
+.desc50bcn {
+    position: absolute;
+    top: 682px;
+    left: 9px;
+} */
+
+
+.cardViaje img {
+    float: left;
+    border-radius: 25px;
+    width: 114px;
+    margin-top: 5px;
+    height: 98px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.cardViaje button {
+    float: right;
+    width: auto;
+    padding: 10px 3px;
+    border-radius: 15px;
+    background-color: #904214;
+    color: #d8b5ab;
+    font-size: 1.6rem;
+    font-family: "Readex Pro";
+    margin-right: 12px;
+    
+
+}
+
+.cardViaje div {
+    color: #0E3157;
+   
+}
+
+.cardViaje div h2 {
+    font-family: 'Jomhuria';
+    font-size: 5rem;
+    font-weight: 400;
+}
+.cardViaje div div{
+    margin-top: -12px;
+}
+.cardViaje div div {
+    font-family: 'Readex Pro';
+    font-size: 1.1rem;
+}
+
+.cardViaje div div hr {
+    width: 130px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.separadorFloat {
+    clear: both;
+    content: none;
+}
+
+.btnVerMas {
+    font-family: "Readex Pro";
+    font-size: 2.1rem;
+    font-weight: 600;
+    background-color: #D8B5AB;
+    color: #0E3157;
+    width: 129px;
+    height: 42px;
+    border-radius: 25px;
+    margin-bottom: 30px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+/*DIEGO*/
+@media screen and (min-width: 1024px) {
+    .cardViaje {
+        width: 49%;
+        height: auto;
+    }
+
+    .cardViaje:nth-child(odd) {
+        float: left;
+        margin-right: 5px;
+    }
+
+    .cardViaje:nth-child(even) {
+        float: right;
+    }
+
+    .cardViaje img {
+        width: 50%;
+        height: auto;
+    }
+
+    .cardViaje div h2 {
+        font-size:5.6rem;
+    }
+    .cardViaje div div{
+        margin-top: -10px;
+    }
+    .cardViaje img {
+        margin-right: 10px;
     }
     
-    .cabecera ul + button img {
-        width: 51px;
-        height: 51px;
+    .cardViaje div div button {
+        margin-top: 10px;
+        float: right;
+        width: auto;
+        padding: 7px 5px;
+        border-radius: 12px;
+        background-color: #904214;
+        color: #d8b5ab;
+        font-size: 1.6rem;
+        font-family: "Readex Pro";
+        margin-right: 5px;
+    
     }
-    .cabecera  button img {
-        padding-bottom: 5px;
-        margin-left: 15px;
+    .cardViaje:nth-child(1n-1) {
+        box-shadow: 2px 4px 5px  #0E3157;
     }
-    .cabecera ul + button img {
-        margin: 35px 65px 0 0;
-    }
-
-    .cabecera > button:first-child{
-        display: none;
-    }
-
-    /*Poner en linea los elementos de la cabecera*/
-    .cabecera div {
-        width: 444px;
-        float:left;
-        margin: 35px 0 0 10px;
-    }
-
-    /*Logo Travelz*/
-    .cabecera div img {
-        width: 59px;
-        height: 59px;
-        float: left;
-        margin-left: 15px;
-    }
-
-    /*Texto: TRAVELZ*/
-    .cabecera div h1 {
-        font-weight: 100;
-        font-size: 120px;
-        line-height: 80px;
-        float:left;
-    }
+    
 
 }
+
+@media screen and (min-width: 1366px) {
+    .cardViaje div h2 {
+        font-size: 8rem;
+    }
+    .cardViaje div div button {
+        padding: 8px 10px;
+        font-size: 2.2rem;
+        margin-right: 15px;
+    }
+    .cardViaje div div {
+        font-size: 1.5rem;
+        
+    }
+    .cardViaje div div hr{
+        width: 27%;
+    }
+    .cardViaje img {
+        width: 47%;
+    }
+    .btnVerMas {
+        width: 180px;
+        height: 60px;
+        font-size: 2.5rem;
+    }
+}
+
+
+@media screen and (min-width: 1920px) {
+.solo-escritorio{
+        display: block;
+        font-family: 'Readex Pro';
+        font-size: 6.5rem;
+        font-weight: 700;
+        color: #D9D9D9;
+        text-align:center;
+        margin-bottom: 40px;
+        margin-top: 20px;
+    }
+section.cards.contenedorCards{
+        background-image: url(imagenes/DestinosDestacados-Transparente.png);
+        background-size: cover;
+        min-width: 100vw;
+        margin-top: 60px;
+        }
+#nuevoContenedorEscritorio > .cardViaje {
+  width: 31.5%;
+  height: 230px;
+}   
+#nuevoContenedorEscritorio > .cardViaje:nth-child(odd) {
+   margin-left: 8%;
+  }   
+#nuevoContenedorEscritorio > .cardViaje:nth-child(even) {
+    margin-right: 8%;
+    
+   }   
+
+.cardViaje img{
+    width: 232px;
+    height: 197px;
+    margin-top: 18px;
+}
+.cardViaje div h2{
+    font-size: 6.6rem;
+    margin-top: 25px;
+}
+.cardViaje div div {
+    font-size: 1.6rem;
+}
+.cardViaje div div button{
+    padding: 18px;
+}
+/* Footer*/
+.pie {
+    padding: 20px;
+    background-color: #0E3157;
+    color: white;
+    font-family: "Readex Pro-ExtraLight";
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.pie h3 {
+    font-size: 28px;
+}
+
+.pie h3:last-of-type {
+    margin-top: 30px;
+}
+
+.pie a {
+    margin: 10px;
+    text-decoration: none;
+    font-size: 19px;
+    color: white;
+
+}
+
+.contacto a {
+    display: block;
+    text-decoration: none;
+    color: white;
+}
+
+.pie ul {
+    float: right;
+    list-style: none;
+    margin-top: 60px;
+}
+
+.pie ul li img {
+    width: 40px;
+    padding: 7px;
+}
+
+/*IVAN*/
+@media screen and (min-width: 1024px) {
+    /* .pie {
+        background-color: aqua;
+    } */
+}
+
+@media screen and (min-width: 1366px) {}
+
+@media screen and (min-width: 1920px) {}
