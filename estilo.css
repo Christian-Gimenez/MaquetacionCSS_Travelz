@@ -806,7 +806,6 @@ codigo label-discount de Diego
     }
     .cardViaje img {
         margin-right: 10px;
-        
     }
     
     .cardViaje div div button {
@@ -857,7 +856,7 @@ codigo label-discount de Diego
 
 
 @media screen and (min-width: 1920px) {
-    .solo-escritorio{
+.solo-escritorio{
         display: block;
         font-family: 'Readex Pro';
         font-size: 6.5rem;
@@ -869,22 +868,26 @@ codigo label-discount de Diego
     }
 section.cards.contenedor{
         background-image: url(imagenes/DestinosDestacados-Transparente.png);
-        background-size: auto;
+        background-size: cover;
         min-width: 100vw;
         margin-top: 60px;
         }
-.cardViaje {
-    width: 615px;
-    height: 230px;
-
+#nuevoContenedorEscritorio > .cardViaje {
+  width: 31.5%;
+  height: 230px;
 }   
+#nuevoContenedorEscritorio > .cardViaje:nth-child(odd) {
+   margin-left: 8%;
+  }   
+#nuevoContenedorEscritorio > .cardViaje:nth-child(even) {
+    margin-right: 8%;
+    
+   }   
+
 .cardViaje img{
     width: 232px;
     height: 197px;
     margin-top: 18px;
-}
-#cards{
-
 }
 .cardViaje div h2{
     font-size: 6.6rem;
