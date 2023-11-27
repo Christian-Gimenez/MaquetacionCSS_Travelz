@@ -748,12 +748,12 @@ hr {
 }
 
 .cardViaje {
+    position: relative; /*Añadido por Christian para los triangulos*/
     background-color: #d8b5ab;
     border-radius: 25px;
     height: 110px;
     margin-bottom: 30px;
     padding-bottom: 5px;
-    /* position:relative; */
 }
 
 .cardViaje:nth-of-type(2) {
@@ -829,6 +829,27 @@ hr {
     left: 50%;
     transform: translate(-50%);
 }
+
+/*Descuento Madrid y Barcelona*/
+.descuento {
+    border-left: 34.5px solid #904214;
+    border-right: 34.5px solid transparent;
+    border-top: 34.5px solid #904214;
+    border-bottom: 34.5px solid transparent;
+    position: absolute;
+}
+
+.desc-text {
+    transform: rotate(-45deg);
+    text-shadow: 1px 1px 3px rgb(61, 61, 61);
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    position: absolute;
+    top: 12px;
+    left: -3px;
+}
+
 
 /*DIEGO*/
 @media screen and (min-width: 1024px) {
