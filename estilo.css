@@ -198,7 +198,7 @@ button {
 
 @media screen and (min-width: 1366px) {}
 
-@media screen and (max-width: 1919px) {
+@media screen and (max-width: 1919.5px) {
 
     .cabecera ul,
     .cabecera li {
@@ -1140,7 +1140,7 @@ hr {
 
 @media screen and (min-width: 1366px) {
     .pie {
-        min-height: 31vh;
+        min-height: 385px;
     }
 
     .logoTravelzFooter {
@@ -1184,7 +1184,7 @@ hr {
 
 @media screen and (min-width: 1920px) {
     .pie {
-        min-height: 38vh;
+        min-height: 400px;
     }
 
     .logoTravelzFooter {
