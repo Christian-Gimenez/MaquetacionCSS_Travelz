@@ -1076,7 +1076,7 @@ hr {
 /*IVAN*/
 @media screen and (min-width: 1024px) {
     .pie {
-        min-height: 26vh;
+        min-height: 300px;
     }
 
     .logoTravelzFooter {
@@ -1114,12 +1114,12 @@ hr {
 
     .contacto {
         float: right;
-        margin-top: -193px;
+        margin-top: -180px;
     }
 
     .contacto div {
         float: left;
-        padding: 20px;
+        /* padding: 20px; */
         letter-spacing: 2px;
         margin: 10px;
     }
@@ -1168,6 +1168,11 @@ hr {
         margin-top: -200px;
     }
 
+    .contacto .contacto-der {
+        margin-left: 100px;
+        margin-right: 55px;
+    }
+
     .pie h3 {
         font-size: 40px;
     }
@@ -1206,12 +1211,6 @@ hr {
     .contacto {
         margin-top: -255px;
     }
-
-    .contacto .contacto-der {
-        margin-left: 100px;
-        margin-right: 55px;
-    }
-
 
     .pie h3 {
         font-size: 50px;
